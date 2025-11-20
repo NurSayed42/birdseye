@@ -1,0 +1,862 @@
+[
+  {
+    "id": 3001,
+    "serial": "6001",
+    "voterNo": "512542660001",
+    "nameBn": "মোঃ জামাল উদ্দিন",
+    "nameEn": "Md. Jamal Uddin",
+    "fatherBn": "মোঃ হাফিজ উদ্দিন",
+    "fatherEn": "Md. Hafiz Uddin",
+    "husbandBn": "",
+    "husbandEn": "",
+    "mother": "Mrs. Ayesha Khatun",
+    "occupation": "Businessman",
+    "dob": "1975-08-12",
+    "address": "House-25, Kazipur, Sirajganj",
+    "postDate": "2025-11-12T10:00:00",
+    "person_additional_info": {
+      "gender": "Male",
+      "division": "Rajshahi",
+      "constituencyNo": 67,
+      "constituencyName": "Sirajganj-6",
+      "constituencyArea": "Kazipur Upazila",
+      "areaZoneName": "Sirajganj",
+      "cityCorporation": "",
+      "district": "Sirajganj",
+      "upazilla": "Kazipur",
+      "thana": "Kazipur",
+      "pourosova": "",
+      "union": "Kazipur Sadar",
+      "ward": 3,
+      "post": "Kazipur",
+      "postCode": "5080",
+      "areaCode": "1101",
+      "areaName": "Kazipur Central",
+      "publicationDate": "2023-10-01"
+    },
+    "person_collection_info": {
+      "addresses": [
+        {
+          "houseNo": "25",
+          "houseName": "Jamal Mansion",
+          "roadNo": "04",
+          "roadName": "Bazar Road",
+          "village": "Kazipur",
+          "sector": "",
+          "housingCity": "",
+          "localName": "Kazipur",
+          "wardNo": "3",
+          "wardName": "Kazipur Sadar 3 No. Ward",
+          "union": "Kazipur Sadar",
+          "pourosova": "",
+          "upazilla": "Kazipur",
+          "thana": "Kazipur",
+          "district": "Sirajganj",
+          "division": "Rajshahi",
+          "country": "Bangladesh"
+        }
+      ],
+      "phones": [
+        {
+          "phoneNo": "01915160001",
+          "type": "mobile",
+          "company": "Grameenphone"
+        }
+      ],
+      "emails": [
+        {
+          "address": "jamal.uddin@yahoo.com",
+          "domain": "yahoo.com",
+          "primary": true
+        }
+      ],
+      "networks": [
+        {
+          "domain": "facebook.com",
+          "url": "https://www.facebook.com/jamal.uddin.bd",
+          "userName": "jamal.uddin@yahoo.com",
+          "networkName": "Jamal Uddin",
+          "totalFan": 1250
+        }
+      ],
+      "supporter": "Jamaat-e-Islami",
+      "religion": "Islam",
+      "ethnicity": "Bangali",
+      "bloodGroup": "A+",
+      "incomeRange": "500K-1M",
+      "fitness": "fit",
+      "serviceStatus": "self-employed",
+      "maritalStatus": "married",
+      "lastUpdateDate": "2025-11-12T10:15:00"
+    }
+  },
+  {
+    "id": 3002,
+    "serial": "6002",
+    "voterNo": "512542660002",
+    "nameBn": "মোঃ জামাল উদ্দিন",
+    "nameEn": "Md. Jamal Uddin",
+    "fatherBn": "মোঃ সোলেমান আলী",
+    "fatherEn": "Md. Soleman Ali",
+    "husbandBn": "",
+    "husbandEn": "",
+    "mother": "Mrs. Rahima Khatun",
+    "occupation": "Teacher",
+    "dob": "1982-03-25",
+    "address": "House-42, Shahjadpur, Sirajganj",
+    "postDate": "2025-11-12T10:05:00",
+    "person_additional_info": {
+      "gender": "Male",
+      "division": "Rajshahi",
+      "constituencyNo": 68,
+      "constituencyName": "Sirajganj-1",
+      "constituencyArea": "Shahjadpur Upazila",
+      "areaZoneName": "Sirajganj",
+      "cityCorporation": "",
+      "district": "Sirajganj",
+      "upazilla": "Shahjadpur",
+      "thana": "Shahjadpur",
+      "pourosova": "",
+      "union": "Shahjadpur Sadar",
+      "ward": 2,
+      "post": "Shahjadpur",
+      "postCode": "5090",
+      "areaCode": "1102",
+      "areaName": "Shahjadpur Central",
+      "publicationDate": "2023-10-01"
+    },
+    "person_collection_info": {
+      "addresses": [
+        {
+          "houseNo": "42",
+          "houseName": "Ali Villa",
+          "roadNo": "07",
+          "roadName": "School Road",
+          "village": "Shahjadpur",
+          "sector": "",
+          "housingCity": "",
+          "localName": "Shahjadpur",
+          "wardNo": "2",
+          "wardName": "Shahjadpur Sadar 2 No. Ward",
+          "union": "Shahjadpur Sadar",
+          "pourosova": "",
+          "upazilla": "Shahjadpur",
+          "thana": "Shahjadpur",
+          "district": "Sirajganj",
+          "division": "Rajshahi",
+          "country": "Bangladesh"
+        }
+      ],
+      "phones": [
+        {
+          "phoneNo": "01725160002",
+          "type": "mobile",
+          "company": "Banglalink"
+        }
+      ],
+      "emails": [
+        {
+          "address": "jamal.teacher@gmail.com",
+          "domain": "gmail.com",
+          "primary": true
+        }
+      ],
+      "networks": [],
+      "supporter": "Jamaat-e-Islami",
+      "religion": "Islam",
+      "ethnicity": "Bangali",
+      "bloodGroup": "B+",
+      "incomeRange": "under 300K",
+      "fitness": "fit",
+      "serviceStatus": "employed",
+      "maritalStatus": "married",
+      "lastUpdateDate": "2025-11-12T10:20:00"
+    }
+  },
+  {
+    "id": 3003,
+    "serial": "6003",
+    "voterNo": "512542660003",
+    "nameBn": "আব্দুল মালেক",
+    "nameEn": "Abdul Malek",
+    "fatherBn": "মোঃ করিম উদ্দিন",
+    "fatherEn": "Md. Karim Uddin",
+    "husbandBn": "",
+    "husbandEn": "",
+    "mother": "Mrs. Fatema Khatun",
+    "occupation": "Imam",
+    "dob": "1970-11-08",
+    "address": "Madrasa Quarter, Ullahpara, Sirajganj",
+    "postDate": "2025-11-12T10:10:00",
+    "person_additional_info": {
+      "gender": "Male",
+      "division": "Rajshahi",
+      "constituencyNo": 69,
+      "constituencyName": "Sirajganj-2",
+      "constituencyArea": "Ullahpara Upazila",
+      "areaZoneName": "Sirajganj",
+      "cityCorporation": "",
+      "district": "Sirajganj",
+      "upazilla": "Ullahpara",
+      "thana": "Ullahpara",
+      "pourosova": "",
+      "union": "Ullahpara Sadar",
+      "ward": 1,
+      "post": "Ullahpara",
+      "postCode": "5100",
+      "areaCode": "1103",
+      "areaName": "Ullahpara Central",
+      "publicationDate": "2023-10-01"
+    },
+    "person_collection_info": {
+      "addresses": [
+        {
+          "houseNo": "Madrasa Quarter",
+          "houseName": "Madrasa Quarter",
+          "roadNo": "",
+          "roadName": "Madrasa Road",
+          "village": "Ullahpara",
+          "sector": "",
+          "housingCity": "",
+          "localName": "Ullahpara",
+          "wardNo": "1",
+          "wardName": "Ullahpara Sadar 1 No. Ward",
+          "union": "Ullahpara Sadar",
+          "pourosova": "",
+          "upazilla": "Ullahpara",
+          "thana": "Ullahpara",
+          "district": "Sirajganj",
+          "division": "Rajshahi",
+          "country": "Bangladesh"
+        }
+      ],
+      "phones": [
+        {
+          "phoneNo": "01835160003",
+          "type": "mobile",
+          "company": "Robi"
+        }
+      ],
+      "emails": [],
+      "networks": [],
+      "supporter": "Jamaat-e-Islami",
+      "religion": "Islam",
+      "ethnicity": "Bangali",
+      "bloodGroup": "O+",
+      "incomeRange": "under 200K",
+      "fitness": "fit",
+      "serviceStatus": "employed",
+      "maritalStatus": "married",
+      "lastUpdateDate": "2025-11-12T10:25:00"
+    }
+  },
+  {
+    "id": 3004,
+    "serial": "6004",
+    "voterNo": "512542660004",
+    "nameBn": "মোঃ সাইফুল ইসলাম",
+    "nameEn": "Md. Saiful Islam",
+    "fatherBn": "মোঃ আব্দুল হাকিম",
+    "fatherEn": "Md. Abdul Hakim",
+    "husbandBn": "",
+    "husbandEn": "",
+    "mother": "Mrs. Zohra Khatun",
+    "occupation": "Student",
+    "dob": "1998-05-20",
+    "address": "House-15, Belkuchi, Sirajganj",
+    "postDate": "2025-11-12T10:15:00",
+    "person_additional_info": {
+      "gender": "Male",
+      "division": "Rajshahi",
+      "constituencyNo": 66,
+      "constituencyName": "Sirajganj-5",
+      "constituencyArea": "Belkuchi Upazila and Chauhali Upazila",
+      "areaZoneName": "Sirajganj",
+      "cityCorporation": "",
+      "district": "Sirajganj",
+      "upazilla": "Belkuchi",
+      "thana": "Belkuchi",
+      "pourosova": "",
+      "union": "Belkuchi Sadar",
+      "ward": 4,
+      "post": "Belkuchi",
+      "postCode": "5075",
+      "areaCode": "1104",
+      "areaName": "Belkuchi Central",
+      "publicationDate": "2023-10-01"
+    },
+    "person_collection_info": {
+      "addresses": [
+        {
+          "houseNo": "15",
+          "houseName": "Hakim Villa",
+          "roadNo": "03",
+          "roadName": "College Road",
+          "village": "Belkuchi",
+          "sector": "",
+          "housingCity": "",
+          "localName": "Belkuchi",
+          "wardNo": "4",
+          "wardName": "Belkuchi Sadar 4 No. Ward",
+          "union": "Belkuchi Sadar",
+          "pourosova": "",
+          "upazilla": "Belkuchi",
+          "thana": "Belkuchi",
+          "district": "Sirajganj",
+          "division": "Rajshahi",
+          "country": "Bangladesh"
+        }
+      ],
+      "phones": [
+        {
+          "phoneNo": "01645160004",
+          "type": "mobile",
+          "company": "Airtel"
+        }
+      ],
+      "emails": [
+        {
+          "address": "saiful.student@outlook.com",
+          "domain": "outlook.com",
+          "primary": true
+        }
+      ],
+      "networks": [
+        {
+          "domain": "facebook.com",
+          "url": "https://www.facebook.com/saiful.islam.98",
+          "userName": "saiful.student@outlook.com",
+          "networkName": "Saiful Islam",
+          "totalFan": 850
+        }
+      ],
+      "supporter": "Jamaat-e-Islami",
+      "religion": "Islam",
+      "ethnicity": "Bangali",
+      "bloodGroup": "AB+",
+      "incomeRange": "under 100K",
+      "fitness": "fit",
+      "serviceStatus": "student",
+      "maritalStatus": "single",
+      "lastUpdateDate": "2025-11-12T10:30:00"
+    }
+  },
+  {
+    "id": 3005,
+    "serial": "6005",
+    "voterNo": "512542660005",
+    "nameBn": "মোঃ জাহাঙ্গীর আলম",
+    "nameEn": "Md. Jahangir Alam",
+    "fatherBn": "মোঃ সিরাজুল ইসলাম",
+    "fatherEn": "Md. Sirajul Islam",
+    "husbandBn": "",
+    "husbandEn": "",
+    "mother": "Mrs. Nasima Khatun",
+    "occupation": "Businessman",
+    "dob": "1972-12-30",
+    "address": "Shop-28, Kazipur Bazar, Sirajganj",
+    "postDate": "2025-11-12T10:20:00",
+    "person_additional_info": {
+      "gender": "Male",
+      "division": "Rajshahi",
+      "constituencyNo": 67,
+      "constituencyName": "Sirajganj-6",
+      "constituencyArea": "Kazipur Upazila",
+      "areaZoneName": "Sirajganj",
+      "cityCorporation": "",
+      "district": "Sirajganj",
+      "upazilla": "Kazipur",
+      "thana": "Kazipur",
+      "pourosova": "",
+      "union": "Kazipur Sadar",
+      "ward": 5,
+      "post": "Kazipur",
+      "postCode": "5080",
+      "areaCode": "1105",
+      "areaName": "Kazipur Bazar",
+      "publicationDate": "2023-10-01"
+    },
+    "person_collection_info": {
+      "addresses": [
+        {
+          "houseNo": "28",
+          "houseName": "Alam Store",
+          "roadNo": "Main Road",
+          "roadName": "Bazar Road",
+          "village": "Kazipur",
+          "sector": "",
+          "housingCity": "",
+          "localName": "Kazipur Bazar",
+          "wardNo": "5",
+          "wardName": "Kazipur Sadar 5 No. Ward",
+          "union": "Kazipur Sadar",
+          "pourosova": "",
+          "upazilla": "Kazipur",
+          "thana": "Kazipur",
+          "district": "Sirajganj",
+          "division": "Rajshahi",
+          "country": "Bangladesh"
+        }
+      ],
+      "phones": [
+        {
+          "phoneNo": "01955160005",
+          "type": "mobile",
+          "company": "Teletalk"
+        }
+      ],
+      "emails": [
+        {
+          "address": "jahangir.alam@hotmail.com",
+          "domain": "hotmail.com",
+          "primary": true
+        }
+      ],
+      "networks": [
+        {
+          "domain": "facebook.com",
+          "url": "https://www.facebook.com/jahangir.alam.business",
+          "userName": "jahangir.alam@hotmail.com",
+          "networkName": "Jahangir Alam Business",
+          "totalFan": 2100
+        }
+      ],
+      "supporter": "Jamaat-e-Islami",
+      "religion": "Islam",
+      "ethnicity": "Bangali",
+      "bloodGroup": "A+",
+      "incomeRange": "1M-2M",
+      "fitness": "fit",
+      "serviceStatus": "self-employed",
+      "maritalStatus": "married",
+      "lastUpdateDate": "2025-11-12T10:35:00"
+    }
+  },
+  {
+    "id": 3006,
+    "serial": "6006",
+    "voterNo": "512542660006",
+    "nameBn": "খালেদা বেগম",
+    "nameEn": "Khaleda Begum",
+    "fatherBn": "মোঃ আব্দুল জলিল",
+    "fatherEn": "Md. Abdul Jalil",
+    "husbandBn": "মোঃ রফিকুল ইসলাম",
+    "husbandEn": "Md. Rafiqul Islam",
+    "mother": "Mrs. Jobeda Khatun",
+    "occupation": "Housewife",
+    "dob": "1980-07-15",
+    "address": "House-56, Shahjadpur, Sirajganj",
+    "postDate": "2025-11-12T10:25:00",
+    "person_additional_info": {
+      "gender": "Female",
+      "division": "Rajshahi",
+      "constituencyNo": 68,
+      "constituencyName": "Sirajganj-1",
+      "constituencyArea": "Shahjadpur Upazila",
+      "areaZoneName": "Sirajganj",
+      "cityCorporation": "",
+      "district": "Sirajganj",
+      "upazilla": "Shahjadpur",
+      "thana": "Shahjadpur",
+      "pourosova": "",
+      "union": "Shahjadpur Sadar",
+      "ward": 6,
+      "post": "Shahjadpur",
+      "postCode": "5090",
+      "areaCode": "1106",
+      "areaName": "Shahjadpur Residential",
+      "publicationDate": "2023-10-01"
+    },
+    "person_collection_info": {
+      "addresses": [
+        {
+          "houseNo": "56",
+          "houseName": "Islam Villa",
+          "roadNo": "08",
+          "roadName": "Residential Road",
+          "village": "Shahjadpur",
+          "sector": "",
+          "housingCity": "",
+          "localName": "Shahjadpur",
+          "wardNo": "6",
+          "wardName": "Shahjadpur Sadar 6 No. Ward",
+          "union": "Shahjadpur Sadar",
+          "pourosova": "",
+          "upazilla": "Shahjadpur",
+          "thana": "Shahjadpur",
+          "district": "Sirajganj",
+          "division": "Rajshahi",
+          "country": "Bangladesh"
+        }
+      ],
+      "phones": [
+        {
+          "phoneNo": "01765160006",
+          "type": "mobile",
+          "company": "Grameenphone"
+        }
+      ],
+      "emails": [],
+      "networks": [],
+      "supporter": "BNP",
+      "religion": "Islam",
+      "ethnicity": "Bangali",
+      "bloodGroup": "B+",
+      "incomeRange": "under 200K",
+      "fitness": "fit",
+      "serviceStatus": "unemployed",
+      "maritalStatus": "married",
+      "lastUpdateDate": "2025-11-12T10:40:00"
+    }
+  },
+  {
+    "id": 3007,
+    "serial": "6007",
+    "voterNo": "512542660007",
+    "nameBn": "মোঃ সালাউদ্দিন আহমেদ",
+    "nameEn": "Md. Salauddin Ahmed",
+    "fatherBn": "মোঃ আব্দুল মতিন",
+    "fatherEn": "Md. Abdul Matin",
+    "husbandBn": "",
+    "husbandEn": "",
+    "mother": "Mrs. Rabeya Khatun",
+    "occupation": "Lawyer",
+    "dob": "1978-09-22",
+    "address": "Chamber-12, Court Road, Sirajganj Sadar",
+    "postDate": "2025-11-12T10:30:00",
+    "person_additional_info": {
+      "gender": "Male",
+      "division": "Rajshahi",
+      "constituencyNo": 70,
+      "constituencyName": "Sirajganj-3",
+      "constituencyArea": "Sirajganj Sadar Upazila",
+      "areaZoneName": "Sirajganj",
+      "cityCorporation": "",
+      "district": "Sirajganj",
+      "upazilla": "Sirajganj Sadar",
+      "thana": "Sirajganj Sadar",
+      "pourosova": "",
+      "union": "Sirajganj Sadar",
+      "ward": 3,
+      "post": "Sirajganj",
+      "postCode": "6700",
+      "areaCode": "1107",
+      "areaName": "Sirajganj Court Area",
+      "publicationDate": "2023-10-01"
+    },
+    "person_collection_info": {
+      "addresses": [
+        {
+          "houseNo": "Chamber-12",
+          "houseName": "Salauddin Chamber",
+          "roadNo": "Court Road",
+          "roadName": "Court Road",
+          "village": "Sirajganj Sadar",
+          "sector": "",
+          "housingCity": "",
+          "localName": "Sirajganj Sadar",
+          "wardNo": "3",
+          "wardName": "Sirajganj Sadar 3 No. Ward",
+          "union": "Sirajganj Sadar",
+          "pourosova": "",
+          "upazilla": "Sirajganj Sadar",
+          "thana": "Sirajganj Sadar",
+          "district": "Sirajganj",
+          "division": "Rajshahi",
+          "country": "Bangladesh"
+        }
+      ],
+      "phones": [
+        {
+          "phoneNo": "01875160007",
+          "type": "mobile",
+          "company": "Robi"
+        }
+      ],
+      "emails": [
+        {
+          "address": "salauddin.law@gmail.com",
+          "domain": "gmail.com",
+          "primary": true
+        }
+      ],
+      "networks": [
+        {
+          "domain": "facebook.com",
+          "url": "https://www.facebook.com/salauddin.lawyer",
+          "userName": "salauddin.law@gmail.com",
+          "networkName": "Salauddin Ahmed - Lawyer",
+          "totalFan": 3200
+        }
+      ],
+      "supporter": "BNP",
+      "religion": "Islam",
+      "ethnicity": "Bangali",
+      "bloodGroup": "O+",
+      "incomeRange": "1M-2M",
+      "fitness": "fit",
+      "serviceStatus": "self-employed",
+      "maritalStatus": "married",
+      "lastUpdateDate": "2025-11-12T10:45:00"
+    }
+  },
+  {
+    "id": 3008,
+    "serial": "6008",
+    "voterNo": "512542660008",
+    "nameBn": "মোঃ শহীদুল ইসলাম",
+    "nameEn": "Md. Shahidul Islam",
+    "fatherBn": "মোঃ আব্দুল হাই",
+    "fatherEn": "Md. Abdul Hai",
+    "husbandBn": "",
+    "husbandEn": "",
+    "mother": "Mrs. Momtaz Begum",
+    "occupation": "Doctor",
+    "dob": "1985-04-18",
+    "address": "Chamber-5, Hospital Road, Sirajganj",
+    "postDate": "2025-11-12T10:35:00",
+    "person_additional_info": {
+      "gender": "Male",
+      "division": "Rajshahi",
+      "constituencyNo": 70,
+      "constituencyName": "Sirajganj-3",
+      "constituencyArea": "Sirajganj Sadar Upazila",
+      "areaZoneName": "Sirajganj",
+      "cityCorporation": "",
+      "district": "Sirajganj",
+      "upazilla": "Sirajganj Sadar",
+      "thana": "Sirajganj Sadar",
+      "pourosova": "",
+      "union": "Sirajganj Sadar",
+      "ward": 4,
+      "post": "Sirajganj",
+      "postCode": "6700",
+      "areaCode": "1108",
+      "areaName": "Sirajganj Medical Zone",
+      "publicationDate": "2023-10-01"
+    },
+    "person_collection_info": {
+      "addresses": [
+        {
+          "houseNo": "Chamber-5",
+          "houseName": "Shahidul Chamber",
+          "roadNo": "Hospital Road",
+          "roadName": "Hospital Road",
+          "village": "Sirajganj Sadar",
+          "sector": "",
+          "housingCity": "",
+          "localName": "Sirajganj Sadar",
+          "wardNo": "4",
+          "wardName": "Sirajganj Sadar 4 No. Ward",
+          "union": "Sirajganj Sadar",
+          "pourosova": "",
+          "upazilla": "Sirajganj Sadar",
+          "thana": "Sirajganj Sadar",
+          "district": "Sirajganj",
+          "division": "Rajshahi",
+          "country": "Bangladesh"
+        }
+      ],
+      "phones": [
+        {
+          "phoneNo": "01995160008",
+          "type": "mobile",
+          "company": "Banglalink"
+        }
+      ],
+      "emails": [
+        {
+          "address": "shahidul.doctor@yahoo.com",
+          "domain": "yahoo.com",
+          "primary": true
+        }
+      ],
+      "networks": [
+        {
+          "domain": "facebook.com",
+          "url": "https://www.facebook.com/dr.shahidul.islam",
+          "userName": "shahidul.doctor@yahoo.com",
+          "networkName": "Dr. Shahidul Islam",
+          "totalFan": 1850
+        }
+      ],
+      "supporter": "BNP",
+      "religion": "Islam",
+      "ethnicity": "Bangali",
+      "bloodGroup": "A+",
+      "incomeRange": "2M-5M",
+      "fitness": "fit",
+      "serviceStatus": "self-employed",
+      "maritalStatus": "married",
+      "lastUpdateDate": "2025-11-12T10:50:00"
+    }
+  },
+  {
+    "id": 3009,
+    "serial": "6009",
+    "voterNo": "512542660009",
+    "nameBn": "মোঃ নূরুল আমিন",
+    "nameEn": "Md. Nurul Amin",
+    "fatherBn": "মোঃ আব্দুল মজিদ",
+    "fatherEn": "Md. Abdul Majid",
+    "husbandBn": "",
+    "husbandEn": "",
+    "mother": "Mrs. Sufia Khatun",
+    "occupation": "Engineer",
+    "dob": "1988-11-30",
+    "address": "House-78, Road-12, Sirajganj",
+    "postDate": "2025-11-12T10:40:00",
+    "person_additional_info": {
+      "gender": "Male",
+      "division": "Rajshahi",
+      "constituencyNo": 70,
+      "constituencyName": "Sirajganj-3",
+      "constituencyArea": "Sirajganj Sadar Upazila",
+      "areaZoneName": "Sirajganj",
+      "cityCorporation": "",
+      "district": "Sirajganj",
+      "upazilla": "Sirajganj Sadar",
+      "thana": "Sirajganj Sadar",
+      "pourosova": "",
+      "union": "Sirajganj Sadar",
+      "ward": 5,
+      "post": "Sirajganj",
+      "postCode": "6700",
+      "areaCode": "1109",
+      "areaName": "Sirajganj Residential",
+      "publicationDate": "2023-10-01"
+    },
+    "person_collection_info": {
+      "addresses": [
+        {
+          "houseNo": "78",
+          "houseName": "Amin Villa",
+          "roadNo": "12",
+          "roadName": "Residential Road",
+          "village": "Sirajganj Sadar",
+          "sector": "",
+          "housingCity": "",
+          "localName": "Sirajganj Sadar",
+          "wardNo": "5",
+          "wardName": "Sirajganj Sadar 5 No. Ward",
+          "union": "Sirajganj Sadar",
+          "pourosova": "",
+          "upazilla": "Sirajganj Sadar",
+          "thana": "Sirajganj Sadar",
+          "district": "Sirajganj",
+          "division": "Rajshahi",
+          "country": "Bangladesh"
+        }
+      ],
+      "phones": [
+        {
+          "phoneNo": "01785160009",
+          "type": "mobile",
+          "company": "Grameenphone"
+        }
+      ],
+      "emails": [
+        {
+          "address": "nurul.engineer@gmail.com",
+          "domain": "gmail.com",
+          "primary": true
+        }
+      ],
+      "networks": [
+        {
+          "domain": "facebook.com",
+          "url": "https://www.facebook.com/nurul.amin.engineer",
+          "userName": "nurul.engineer@gmail.com",
+          "networkName": "Nurul Amin - Engineer",
+          "totalFan": 950
+        }
+      ],
+      "supporter": "BNP",
+      "religion": "Islam",
+      "ethnicity": "Bangali",
+      "bloodGroup": "B+",
+      "incomeRange": "500K-1M",
+      "fitness": "fit",
+      "serviceStatus": "employed",
+      "maritalStatus": "married",
+      "lastUpdateDate": "2025-11-12T10:55:00"
+    }
+  },
+  {
+    "id": 3010,
+    "serial": "6010",
+    "voterNo": "512542660010",
+    "nameBn": "মোঃ রহমত আলী",
+    "nameEn": "Md. Rohomot Ali",
+    "fatherBn": "মোঃ আব্দুল খালেক",
+    "fatherEn": "Md. Abdul Khaleq",
+    "husbandBn": "",
+    "husbandEn": "",
+    "mother": "Mrs. Jahanara Begum",
+    "occupation": "Farmer",
+    "dob": "1965-06-25",
+    "address": "Village: Char Belkuchi, Belkuchi, Sirajganj",
+    "postDate": "2025-11-12T10:45:00",
+    "person_additional_info": {
+      "gender": "Male",
+      "division": "Rajshahi",
+      "constituencyNo": 66,
+      "constituencyName": "Sirajganj-5",
+      "constituencyArea": "Belkuchi Upazila and Chauhali Upazila",
+      "areaZoneName": "Sirajganj",
+      "cityCorporation": "",
+      "district": "Sirajganj",
+      "upazilla": "Belkuchi",
+      "thana": "Belkuchi",
+      "pourosova": "",
+      "union": "Char Belkuchi",
+      "ward": 7,
+      "post": "Char Belkuchi",
+      "postCode": "5076",
+      "areaCode": "1110",
+      "areaName": "Char Belkuchi Area",
+      "publicationDate": "2023-10-01"
+    },
+    "person_collection_info": {
+      "addresses": [
+        {
+          "houseNo": "",
+          "houseName": "",
+          "roadNo": "",
+          "roadName": "",
+          "village": "Char Belkuchi",
+          "sector": "",
+          "housingCity": "",
+          "localName": "Char Belkuchi",
+          "wardNo": "7",
+          "wardName": "Char Belkuchi 7 No. Ward",
+          "union": "Char Belkuchi",
+          "pourosova": "",
+          "upazilla": "Belkuchi",
+          "thana": "Belkuchi",
+          "district": "Sirajganj",
+          "division": "Rajshahi",
+          "country": "Bangladesh"
+        }
+      ],
+      "phones": [
+        {
+          "phoneNo": "01905160010",
+          "type": "mobile",
+          "company": "Teletalk"
+        }
+      ],
+      "emails": [],
+      "networks": [],
+      "supporter": "NCP",
+      "religion": "Islam",
+      "ethnicity": "Bangali",
+      "bloodGroup": "O+",
+      "incomeRange": "under 150K",
+      "fitness": "fit",
+      "serviceStatus": "self-employed",
+      "maritalStatus": "married",
+      "lastUpdateDate": "2025-11-12T11:00:00"
+    }
+  }
+]
