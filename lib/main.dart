@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'pages/home_page.dart';
+import 'pages/map_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,13 +11,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Birds Eye - Bangladesh Political Map',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
-      home: const HomePage(),
+      title: "BD Map Drilldown",
       debugShowCheckedModeBanner: false,
+      home: const MapPage(),
     );
   }
 }

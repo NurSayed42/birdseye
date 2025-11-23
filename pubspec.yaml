@@ -1,28 +1,22 @@
-name: birdseye
-description: "Bangladesh Political Map Application"
-
-publish_to: 'none'
-
-version: 1.0.0+1
+name: bangladesh_admin_map
+description: BD administrative map drilldown with persons list
 
 environment:
-  sdk: '>=3.0.0 <4.0.0'
+  sdk: ">=3.0.0 <4.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
-  cupertino_icons: ^1.0.2
-  flutter_map: ^6.1.0
-  latlong2: ^0.9.1  # এই লাইনটি change করুন
-  http: ^1.1.0
-  provider: ^6.1.1
-
-dev_dependencies:
-  flutter_test:
-    sdk: flutter
-  flutter_lints: ^3.0.0
+  flutter_map: ^8.2.2
+  latlong2: ^0.9.0
 
 flutter:
   uses-material-design: true
+
   assets:
-    - assets/data/
+    - assets/bangladesh_geo.json
+    - assets/divisions_geo.json
+    - assets/districts_geo.json
+    - assets/upazilas_geo.json
+    - assets/unions_geo.json
+    - assets/persons.json

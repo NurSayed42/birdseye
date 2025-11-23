@@ -1,267 +1,256 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:latlong2/latlong.dart';
-import '../models/person_model.dart';
-import '../models/geo_model.dart';
-import '../services/json_service.dart';
-import '../utils/constants.dart';
+
+import '../models/geo_feature.dart';
+import '../models/person.dart';
+import '../services/geo_loader.dart';
+import '../services/person_loader.dart';
+import '../widgets/list_panel.dart';
+
+enum Level { country, division, district, upazila, union }
 
 class MapPage extends StatefulWidget {
-  final List<Person> persons;
-  final String areaType;
-  final String areaName;
-
-  const MapPage({
-    super.key,
-    required this.persons,
-    required this.areaType,
-    required this.areaName,
-  });
+  const MapPage({super.key});
 
   @override
   State<MapPage> createState() => _MapPageState();
 }
 
 class _MapPageState extends State<MapPage> {
-  GeoJsonData? currentGeoData;
-  bool isLoading = true;
-  String currentLevel = 'division';
+  final MapController controller = MapController();
+
+  // geo lists
+  List<GeoFeature> divisions = [];
+  List<GeoFeature> districts = [];
+  List<GeoFeature> upazilas = [];
+  List<GeoFeature> unions = [];
+
+  List<Person> persons = [];
+
+  // selected items
+  GeoFeature? selectedDivision;
+  GeoFeature? selectedDistrict;
+  GeoFeature? selectedUpazila;
+  GeoFeature? selectedUnion;
+
+  Level level = Level.country;
+
+  bool loading = true;
 
   @override
   void initState() {
     super.initState();
-    loadGeoData();
+    loadAll();
   }
 
-  Future<void> loadGeoData() async {
-    try {
-      String assetPath;
-      
-      switch (widget.areaType) {
-        case 'division':
-          assetPath = AppConstants.geoJsonPaths['divisions']!;
-          currentLevel = 'division';
-          break;
-        case 'district':
-          assetPath = AppConstants.geoJsonPaths['districts']!;
-          currentLevel = 'district';
-          break;
-        case 'upazilla':
-          assetPath = AppConstants.geoJsonPaths['upazilas']!;
-          currentLevel = 'upazilla';
-          break;
-        case 'union':
-          assetPath = AppConstants.geoJsonPaths['unions']!;
-          currentLevel = 'union';
-          break;
-        default:
-          assetPath = AppConstants.geoJsonPaths['bangladesh']!;
-          currentLevel = 'country';
-      }
-      
-      final geoData = await JsonService.loadGeoJson(assetPath);
-      setState(() {
-        currentGeoData = geoData;
-        isLoading = false;
-      });
-    } catch (e) {
-      print('Error loading geo data: $e');
-      setState(() {
-        isLoading = false;
-      });
-    }
-  }
-
-  void navigateToNextLevel(String areaName) {
-    String nextLevel;
-    switch (currentLevel) {
-      case 'division':
-        nextLevel = 'district';
-        break;
-      case 'district':
-        nextLevel = 'upazilla';
-        break;
-      case 'upazilla':
-        nextLevel = 'union';
-        break;
-      default:
-        return;
-    }
-
-    Navigator.push(
-      context,
-      MaterialPageRoute(
-        builder: (context) => MapPage(
-          persons: widget.persons,
-          areaType: nextLevel,
-          areaName: areaName,
-        ),
-      ),
+  Future<void> loadAll() async {
+    divisions = await GeoLoader.load(
+      "assets/divisions_geo.json",
+      adminLevel: "ADM1",
+      nameKey: "ADM1_EN",
+      parentKey: "ADM0_EN",
     );
+
+    districts = await GeoLoader.load(
+      "assets/districts_geo.json",
+      adminLevel: "ADM2",
+      nameKey: "ADM2_EN",
+      parentKey: "ADM1_EN",
+    );
+
+    upazilas = await GeoLoader.load(
+      "assets/upazilas_geo.json",
+      adminLevel: "ADM3",
+      nameKey: "ADM3_EN",
+      parentKey: "ADM2_EN",
+    );
+
+    unions = await GeoLoader.load(
+      "assets/unions_geo.json",
+      adminLevel: "ADM4",
+      nameKey: "ADM4_EN",
+      parentKey: "ADM3_EN",
+    );
+
+    persons = await PersonLoader.loadPersons();
+
+    setState(() => loading = false);
   }
+
+  // ------------------ BUILD UI ------------------
 
   @override
   Widget build(BuildContext context) {
-    if (isLoading) {
-      return Scaffold(
-        appBar: AppBar(title: Text('লোড হচ্ছে...')),
+    if (loading) {
+      return const Scaffold(
         body: Center(child: CircularProgressIndicator()),
       );
     }
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('${widget.areaName} - মানচিত্র'),
-        backgroundColor: Colors.green[700],
+        title: const Text("BD Map Navigation"),
         actions: [
           IconButton(
-            icon: Icon(Icons.table_chart),
             onPressed: () {
-              // Navigate to data table
+              setState(() {
+                level = Level.country;
+                selectedDivision = null;
+                selectedDistrict = null;
+                selectedUpazila = null;
+                selectedUnion = null;
+              });
             },
-          ),
+            icon: const Icon(Icons.home),
+          )
         ],
       ),
-      body: currentGeoData != null
-          ? FlutterMap(
-              options: MapOptions(
-                center: _getCenterPoint(),
-                zoom: _getZoomLevel(),
-                onTap: (tapPosition, latLng) {
-                  // Handle area tap
-                  _handleMapTap(latLng);
-                },
-              ),
-              children: [
-                TileLayer(
-                  urlTemplate: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
-                ),
-                PolygonLayer(
-                  polygons: _buildPolygons(),
-                ),
-              ],
-            )
-          : Center(
-              child: Text('মানচিত্র ডেটা লোড করতে সমস্যা হচ্ছে'),
-            ),
+      body: Row(
+        children: [
+          Expanded(flex: 3, child: buildMap()),
+          Expanded(flex: 2, child: buildSideList()),
+        ],
+      ),
     );
   }
 
-  LatLng _getCenterPoint() {
-    switch (currentLevel) {
-      case 'division':
-        return LatLng(23.6850, 90.3563);
-      case 'district':
-        return LatLng(23.6850, 90.3563);
-      case 'upazilla':
-        return LatLng(23.6850, 90.3563);
-      case 'union':
-        return LatLng(23.6850, 90.3563);
-      default:
-        return LatLng(23.6850, 90.3563);
-    }
+  // ------------------- MAP -------------------
+
+  Widget buildMap() {
+    return FlutterMap(
+      mapController: controller,
+      options: MapOptions(
+        initialCenter: const LatLng(23.7, 90.4),
+        initialZoom: 7,
+        maxZoom: 14,
+      ),
+      children: [
+        TileLayer(urlTemplate: "https://tile.openstreetmap.org/{z}/{x}/{y}.png"),
+        PolygonLayer(polygons: polygonsForLevel()),
+      ],
+    );
   }
 
-  double _getZoomLevel() {
-    switch (currentLevel) {
-      case 'division':
-        return 7.0;
-      case 'district':
-        return 8.0;
-      case 'upazilla':
-        return 9.0;
-      case 'union':
-        return 10.0;
-      default:
-        return 6.5;
+  List<Polygon> polygonsForLevel() {
+    List<GeoFeature> list = [];
+
+    if (level == Level.country) list = divisions;
+    if (level == Level.division && selectedDivision != null) {
+      list = divisions.where((d) => d.name == selectedDivision!.name).toList();
     }
-  }
+    if (level == Level.district && selectedDistrict != null) {
+      list = districts.where((d) => d.name == selectedDistrict!.name).toList();
+    }
+    if (level == Level.upazila && selectedUpazila != null) {
+      list = upazilas.where((u) => u.name == selectedUpazila!.name).toList();
+    }
+    if (level == Level.union && selectedUnion != null) {
+      list = unions.where((u) => u.name == selectedUnion!.name).toList();
+    }
 
-  List<Polygon> _buildPolygons() {
-    List<Polygon> polygons = [];
-
-    for (var feature in currentGeoData!.features) {
-      if (feature.geometry.type == 'MultiPolygon') {
-        final coordinates = feature.geometry.coordinates;
-        final properties = feature.properties;
-        final areaName = properties['name'] ?? 'Unknown';
-
-        // Calculate party stats
-        final stats = JsonService.calculatePartyStats(
-          widget.persons, 
-          currentLevel, 
-          areaName
-        );
-
-        Color areaColor = _getAreaColor(stats);
-
-        for (var polygonGroup in coordinates) {
-          for (var polygon in polygonGroup) {
-            List<LatLng> points = [];
-            for (var point in polygon) {
-              if (point is List && point.length >= 2) {
-                points.add(LatLng(point[1].toDouble(), point[0].toDouble()));
-              }
-            }
-
-            polygons.add(
-              Polygon(
-                points: points,
-                color: areaColor.withOpacity(0.6),
+    return list
+        .expand((f) => f.polygons.map(
+              (ring) => Polygon(
+                points: ring,
+                color: Colors.green.withOpacity(0.4),
                 borderColor: Colors.black,
-                borderStrokeWidth: 1,
-                isFilled: true,
+                borderStrokeWidth: 1.0,
               ),
-            );
-          }
-        }
+            ))
+        .toList();
+  }
+
+  void onPolygonTap(GeoFeature f) {
+    setState(() {
+      if (level == Level.country) {
+        selectedDivision = f;
+        level = Level.division;
       }
-    }
-
-    return polygons;
+    });
   }
 
-  Color _getAreaColor(Map<String, int> stats) {
-    if (stats.isEmpty) return Colors.grey;
+  // ------------------- RIGHT LIST -------------------
 
-    String majorityParty = stats.entries.reduce((a, b) => a.value > b.value ? a : b).key;
-    
-    switch (majorityParty) {
-      case 'Awami League':
-        return Colors.green;
-      case 'BNP':
-        return Colors.red;
-      case 'Jatiya Party':
-        return Colors.blue;
-      case 'Jamaat-e-Islami':
-        return Colors.purple;
-      default:
-        return Colors.orange;
+  Widget buildSideList() {
+    if (level == Level.country) {
+      return ListPanel(
+        title: "Divisions",
+        items: divisions,
+        onSelect: (f) {
+          setState(() {
+            selectedDivision = f;
+            level = Level.division;
+          });
+        },
+      );
     }
-  }
 
-  void _handleMapTap(LatLng latLng) {
-    // Implement area detection logic here
-    // This is a simplified version
-    showDialog(
-      context: context,
-      builder: (context) => AlertDialog(
-        title: Text('এলাকা নির্বাচন'),
-        content: Text('পরবর্তী লেভেলে যেতে চান?'),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.pop(context),
-            child: Text('না'),
-          ),
-          TextButton(
-            onPressed: () {
-              Navigator.pop(context);
-              navigateToNextLevel('Sample Area');
-            },
-            child: Text('হ্যাঁ'),
-          ),
-        ],
-      ),
-    );
+    if (level == Level.division) {
+      final list = districts
+          .where((d) => d.parentName == selectedDivision!.name)
+          .toList();
+
+      return ListPanel(
+        title: "Districts",
+        items: list,
+        onSelect: (f) {
+          setState(() {
+            selectedDistrict = f;
+            level = Level.district;
+          });
+        },
+      );
+    }
+
+    if (level == Level.district) {
+      final list = upazilas
+          .where((u) => u.parentName == selectedDistrict!.name)
+          .toList();
+
+      return ListPanel(
+        title: "Upazilas",
+        items: list,
+        onSelect: (f) {
+          setState(() {
+            selectedUpazila = f;
+            level = Level.upazila;
+          });
+        },
+      );
+    }
+
+    if (level == Level.upazila) {
+      final list = unions
+          .where((u) => u.parentName == selectedUpazila!.name)
+          .toList();
+
+      return ListPanel(
+        title: "Unions",
+        items: list,
+        onSelect: (f) {
+          setState(() {
+            selectedUnion = f;
+            level = Level.union;
+          });
+        },
+      );
+    }
+
+    // persons list
+    if (level == Level.union) {
+      final list = persons
+          .where((p) => p.union == selectedUnion!.name)
+          .toList();
+
+      return ListPanel(
+        title: "Persons in ${selectedUnion!.name}",
+        items: const [],
+        persons: list,
+        onSelect: (_) {},
+      );
+    }
+
+    return const SizedBox();
   }
 }
