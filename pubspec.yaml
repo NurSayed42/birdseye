@@ -14,7 +14,7 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/bangladesh_geo.json
+    - assets/CountryMap.json
     - assets/divisions_geo.json
     - assets/districts_geo.json
     - assets/upazilas_geo.json

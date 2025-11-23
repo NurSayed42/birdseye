@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Bangladesh",
+    "parties": [
+      { "name": "Jamaat Islami", "percentage": 35.0 },
+      { "name": "BNP", "percentage": 28.3 },
+      { "name": "Islami Andolon", "percentage": 7.1 },
+      { "name": "NCP", "percentage": 3.4 }
+    ]
+  },
+  {
+    "name": "Dhaka",
+    "parties": [
+      { "name": "Jamaat Islami", "percentage": 32.5 },
+      { "name": "BNP", "percentage": 28.3 },
+      { "name": "Islami Andolon", "percentage": 7.1 },
+      { "name": "NCP", "percentage": 3.4 }
+    ]
+  },
+  {
+    "name": "Chattogram",
+    "parties": [
+      { "name": "Jamaat Islami", "percentage": 38.2 },
+      { "name": "BNP", "percentage": 30.8 },
+      { "name": "Islami Andolon", "percentage": 6.4 },
+      { "name": "NCP", "percentage": 4.0 }
+    ]
+  },
+  {
+    "name": "Rajshahi",
+    "parties": [
+      { "name": "Jamaat Islami", "percentage": 31.8 },
+      { "name": "BNP", "percentage": 25.6 },
+      { "name": "Islami Andolon", "percentage": 8.9 },
+      { "name": "NCP", "percentage": 2.7 }
+    ]
+  },
+  {
+    "name": "Khulna",
+    "parties": [
+      { "name": "Jamaat Islami", "percentage": 33.4 },
+      { "name": "BNP", "percentage": 26.2 },
+      { "name": "Islami Andolon", "percentage": 9.4 },
+      { "name": "NCP", "percentage": 3.1 }
+    ]
+  },
+  {
+    "name": "Barishal",
+    "parties": [
+      { "name": "Jamaat Islami", "percentage": 36.0 },
+      { "name": "BNP", "percentage": 22.8 },
+      { "name": "Islami Andolon", "percentage": 11.5 },
+      { "name": "NCP", "percentage": 5.0 }
+    ]
+  },
+  {
+    "name": "Sylhet",
+    "parties": [
+      { "name": "Jamaat Islami", "percentage": 37.4 },
+      { "name": "BNP", "percentage": 27.1 },
+      { "name": "Islami Andolon", "percentage": 10.2 },
+      { "name": "NCP", "percentage": 4.4 }
+    ]
+  },
+  {
+    "name": "Rangpur",
+    "parties": [
+      { "name": "Jamaat Islami", "percentage": 30.7 },
+      { "name": "BNP", "percentage": 24.4 },
+      { "name": "Islami Andolon", "percentage": 7.9 },
+      { "name": "NCP", "percentage": 3.0 }
+    ]
+  },
+  {
+    "name": "Mymensingh",
+    "parties": [
+      { "name": "Jamaat Islami", "percentage": 34.1 },
+      { "name": "BNP", "percentage": 23.7 },
+      { "name": "Islami Andolon", "percentage": 9.8 },
+      { "name": "NCP", "percentage": 4.1 }
+    ]
+  },
+  {
+    "name": "Faridpur",
+    "parties": [
+      { "name": "Jamaat Islami", "percentage": 34.1 },
+      { "name": "BNP", "percentage": 23.7 },
+      { "name": "Islami Andolon", "percentage": 9.8 },
+      { "name": "NCP", "percentage": 4.1 }
+    ]
+  }
+]
